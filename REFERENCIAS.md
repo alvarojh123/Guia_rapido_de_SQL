@@ -1,3 +1,3 @@
 
 
-(SQL interactivo)[Tutorial SQL en Español interactivo con intérprete SQL]
+[SQL interactivo](Thttps://www.sql-easy.com/es/tutorial/#!where_equals)
