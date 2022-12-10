@@ -1,4 +1,8 @@
 
+# Guia básico de SQL
+
+Alvaro J. Lopez
+
 * 
 
 
