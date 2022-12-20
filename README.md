@@ -1,27 +1,27 @@
 
 # Guia básico de SQL
 
-Alvaro J. Lopez
+**Alvaro J. Lopez**
 
 
 Uma forma muito legal de aprender SQL é praticando. O site https://www.sql-easy.com/ nos ensina de uma forma interativa a usar os comandos SQL mais úteis. Para praticar nesse site são propostos exercícios SQL.
 
 Assim neste post eu soluciono todos os problemas de SQL apresentados no site https://www.sql-easy.com/.
 
-O objetivo é que este post serva como uma ajuda para todos aqueles que desejam mergulhar no SQL de uma forma simples e (bem) prática. 
+O objetivo deste artigo é ser um guia inicial para todos aqueles que desejem mergulhar no SQL de uma forma simples e (bem) prática. 
 
 
-### SELECT *
+A tabela  ``` family_members ``` é a seguinte:
+
+
+<img src="./imagenes/family_members.png">
 
 * Devolver todas as colunas da tabela. [LINK](https://www.sql-easy.com/es/tutorial/#!select)
-
 
 ```sql
 SELECT *
 FROM family_members
 ```
-
-### SELECT
 
 * ¿Puedes devolver sólo las columnas name y species? [LINK](https://www.sql-easy.com/es/tutorial/#!select_columns)
 
@@ -57,6 +57,12 @@ SELECT *
 FROM family_members
 WHERE num_books_read >= 180;
 ```
+
+A tabela  ``` friends_of_pickles ``` é a seguinte:
+
+<img src="./imagenes/friends_of_pickles.png">
+
+
 
 * Can you find all of Pickles' friends that are dogs and under the height of 45cm?
 
@@ -105,7 +111,6 @@ FROM friends_of_pickles
 ORDER BY height_cm DESC
 ```
 
-### LIMIT
 
 * Can you return the single row (and all columns) of the tallest friends_of_pickles?
 
@@ -116,7 +121,6 @@ FROM friends_of_pickles
 ORDER BY height_cm DESC LIMIT 1
 ```
 
-### COUNT
 
 *  returns the total number of rows in the table friends_of_pickles
 ```sql
